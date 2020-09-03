@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>PokeDex</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="https://www.pokemongobrasil.com/wp-content/uploads/2016/08/pokebola-go.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Pokedex</h1>
+    <select name="" id="geracoes" onchange="fetchPokemon(generationPokemon[geracoes.value])">
+      <option value="1">Geração I</option>
+      <option value="2">Geração II</option>
+      <option value="3">Geração III</option>
+      <option value="4">Geração IV</option>
+      <option value="5">Geração V</option>
+      <option value="6">Geração VI</option>
+      <option value="7">Geração VII</option>
+      <option value="8">Geração VIII</option>
+    </select>
+    <div class="carregar" id="roda" style="visibility: visible;"></div>
+
+    <ul data-js="pokedex" class="pokedex"></ul>
+    
+  </div>
+  
+  <script src="./app.js"></script>
+  <header><a href="https://github.com/Roger-Melo/pokedex" target="_blank"> Foi utilizado como base o exemplo do Roger Melo </a> </header>
+</body>
+</html>
