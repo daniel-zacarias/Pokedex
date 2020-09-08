@@ -1,0 +1,102 @@
+.modal-s{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.90);
+    z-index: 5;
+	display: none;
+}
+
+
+  
+
+.card-modal{
+	background-color:white ;
+	border-radius: 24px;
+	border: 2px solid black;
+	text-align: center;
+	width: 250px;
+	
+	justify-self: center;
+	/* align-self: center; */
+	
+}
+
+.card-pokemon{
+	
+	grid-row: 2;
+	grid-column: 1;
+	height: 281px;
+}
+
+.div_desc{
+	overflow:auto;
+	grid-row: 2/3;
+	grid-column: 2;
+	height: auto;
+	border-radius:0 ;
+	max-height: 285px;
+	padding: 3px 10px ;
+}
+
+.modal-s  h2{
+	color: #838885;
+	text-transform: capitalize;
+    /* justify-self: center;
+	align-self: center;
+	text-align: center; */
+    
+}
+
+.modal{
+	position: relative;
+	width: 600px;
+	height: 350px;
+	/* background-color: white; */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: grid;
+	grid-template-columns:  repeat(2, 1fr) ;
+	grid-template-rows:   50px  300px  auto ;
+    grid-gap: 1px;
+    border-radius: 24px;
+    border: rgba(0, 0, 0, 0.90);
+}
+
+.btnClose{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	color:  black;
+	font-size: 2em;
+	cursor: pointer;
+	transition: color 0.25s linear ;
+}
+
+/* .btnClose:hover{
+	color: white;
+} */
+
+.modal-image{
+    width: 200px;
+    grid-row: 2;
+    justify-self: center;
+}
+
+article {
+	color: black;
+	font-size: 2vh;
+}
+
+
+
+.visible{
+	display: block ;
+}
+
+/* .invisible{
+	display: none;
+} */

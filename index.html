@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>PokeDex</title>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./modal.css">
   <link rel="shortcut icon" href="https://www.pokemongobrasil.com/wp-content/uploads/2016/08/pokebola-go.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
 </head>
@@ -12,19 +13,31 @@
   <div class="container">
     <h1>Pokedex</h1>
     <select name="" id="geracoes" onchange="fetchPokemon(generationPokemon[geracoes.value])">
-      <option value="1">Geração I</option>
-      <option value="2">Geração II</option>
-      <option value="3">Geração III</option>
-      <option value="4">Geração IV</option>
-      <option value="5">Geração V</option>
-      <option value="6">Geração VI</option>
-      <option value="7">Geração VII</option>
-      <option value="8">Geração VIII</option>
+      <option value="1">Generation I</option>
+      <option value="2">Generation II</option>
+      <option value="3">Generation III</option>
+      <option value="4">Generation IV</option>
+      <option value="5">Generation V</option>
+      <option value="6">Generation VI</option>
+      <option value="7">Generation VII</option>
+      <!-- <option value="8">Geração VIII</option> -->
     </select>
     <div class="carregar" id="roda" style="visibility: visible;"></div>
 
     <ul data-js="pokedex" class="pokedex"></ul>
-    
+    <div class="modal-s invisible" id="fatherModal">
+      <div class="modal"> 
+        <span class="btnClose">X</span>
+        <div class="card-pokemon card-modal">
+        <h2>7.Squirtle</h2>
+        <img src="https://pokeres.bastionbot.org/images/pokemon/7.png" class="modal-image"alt="">
+        </div>
+        <div class="div_desc card-modal">
+        <h2>description</h2>
+        <article style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vel adipisci quis ad expedita saepe blanditiis commodi, quas officia, placeat corrupti facere voluptates consequatur animi tempore provident ab eum! Voluptatem?</article>
+        </div>
+      </div>
+    </div>
   </div>
   
   <script src="./app.js"></script>
